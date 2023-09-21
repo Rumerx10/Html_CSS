@@ -1,0 +1,137 @@
+.header_container
+{
+    position: fixed;
+}
+.header
+{
+    background-color: rgba(241, 241, 241, 0.938);
+    height: 57px;
+    display: flex;    
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;  
+    
+}
+.left_section
+{
+    display: flex;
+    width:162px;  
+}
+
+.hamburger_icon
+{
+    height: 24px;
+    margin-left: 24px;
+    margin-top: 3px;
+}
+.youtube_logo_icon
+{
+    height: 20px;
+    margin-left: 24px;
+    margin-top: 5px;
+}
+.middle_seciton
+{    
+    display: flex;
+    vertical-align: center;
+    align-items: center;    
+}
+.search_box
+{
+    height: 37px;
+    border:1px solid rgb(208, 208, 208);
+    border-radius: 2px;
+    padding-left: 14px;
+    font-family: Roboto,Arial;
+    font-size: 16px;
+    flex:1;
+}
+
+.search_btn
+{
+    vertical-align: top;
+    margin-left: -5px;
+    padding:6px 20px;
+    border:1px solid rgb(208, 208, 208);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.search_btn_icon
+{
+    height: 24px;
+    
+}
+
+.voice_search_btn
+{
+    background-color: rgb(243, 238, 238);
+    border:none;
+    padding:6px 8px;
+    border-radius: 45px;
+    vertical-align: top;    
+    cursor: pointer;  
+}
+
+.voice_search_icon
+{
+   height: 24px;     
+}
+.right_section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+    vertical-align: center;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 29px;
+    padding-top: 2.5px;
+    padding-right: 2px;
+    
+}
+
+.upload_icon
+{
+    height: 24px;
+    cursor: pointer;
+}
+
+.youtube_apps_icon
+{
+    height: 24px;
+    padding-left: 3px;
+    cursor: pointer;
+}
+.notificaitons_icon
+{
+    height: 25px;   
+    padding-left: 3px; 
+    cursor: pointer;
+}
+.notification_num_container
+{
+    position: relative;
+}
+.notification_number
+{
+    position: absolute;
+    background-color: rgb(190, 29, 29);
+    color:white;
+    font-family: Roboto,Arial;
+    font-size: 11px;
+    padding:1px 4.5px;
+    border: 2px solid white;
+    border-radius: 20px;
+    left:15px;
+    top:-32px;
+}
+
+.current_porfile_icon
+{
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 3px;
+    cursor: pointer;
+}

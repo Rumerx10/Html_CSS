@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <h1 id="dc"></h1>
+</body>
+
+<script>
+    
+    function showDate(){
+        let date=new Date();  
+        let h=date.getHours();
+        let m=date.getMinutes();
+        let s=date.getSeconds();
+        
+        let session=" AM";
+        
+        if(h==0){
+            h=12;
+        }
+        if(h>12){
+            h=h-12;
+            session=" PM";
+        }
+        
+        // if(h<10){
+        //     h="0"+h;
+        // }
+        // if(m<10){
+        //     m="0"+m;
+        // }
+        // if(s<10){
+        //     s="0"+s;
+        // }
+
+        h=(h<10) ? h = "0"+h : h;
+        h=(h==0) ? h=12 : h;
+        h=(h>12) ? h=h-12 : h;
+        m=(m<10) ? m = "0"+m : m;
+        s=(s<10) ? s = "0"+s : s;
+
+        let time=h+":"+m+":"+s+session;
+        document.getElementById("dc").innerHTML=time;
+        
+        setTimeout(showDate,1000);
+    }
+
+    showDate();
+
+    
+
+
+</script>
+</html>

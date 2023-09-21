@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+</body>
+
+<script>
+    let win = 0, lost = 0; 
+    function guess(){       
+        randomNumber=Math.floor(Math.random()*5+1);        
+        gussed_num=parseInt(prompt("Guess a number: "));
+        if(randomNumber==gussed_num){
+            console.log("Matched ! You have won!");
+            win++;
+        }else{
+            console.log("You have lost! Random number was "+randomNumber);
+            lost++;
+        }
+    }
+
+    for(let i=1; i<6; i++){
+        guess();
+    }
+    document.write("You have won = "+win+" times<br/>");
+    document.write("You have lost = "+lost+" times<br/>");
+
+</script>
+</html>

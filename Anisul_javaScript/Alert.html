@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="pic1()">pic_1</button>
+    <button onclick="pic2()">pic_2</button>
+    <p></p>
+
+    <img id="img" width="300px">
+
+</body>
+<script>
+    let img=document.querySelector("#img");
+    function pic1(){
+        img.src="../Photos/rume.webp";
+    }
+
+    function pic2(){
+        img.src="../Photos/thumbnail-4.webp";
+    }
+
+</script>
+</html>

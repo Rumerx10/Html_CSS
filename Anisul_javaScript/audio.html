@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paraStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="mybtn a">a</button>
+    <button class="mybtn b">b</button>
+    <button class="mybtn b">c</button>
+</body>
+<script>
+    let btns = document.querySelectorAll("button");
+    for(let i=0; i<3; i++){
+        btns[i].addEventListener("click",function(){
+            let text=this.innerHTML;
+            audioPlay(text);
+            applyAnimation(text);
+
+            
+        });
+    }
+
+    document.addEventListener("keypress",function(event){
+        let text=event.key;
+        audioPlay(text);
+        applyAnimation(textgg);
+    });
+
+    function audioPlay(text){
+        switch(text){
+                case "a":
+                    let audio1 = new Audio("../audio/LUV LETTER.m4a");
+                    audio1.play();
+                    break;
+
+                case "b":
+                    let audio2 = new Audio("../audio/Ignite.m4a");
+                    audio2.play();
+                    break;
+                case "c":
+                    let audio3 = new Audio("../audio/Tomar Jonno Nilche Tara.m4a");
+                    audio3.play();
+                    break;    
+            }
+    }
+
+    function applyAnimation(text){               
+        let selectedBnt=document.querySelector("."+text);
+        selectedBnt.classList.add("animation");
+        setTimeout(function(){
+            selectedBnt.classList.remove("animation");
+        }, 1000);
+
+    }
+
+</script>
+</html>

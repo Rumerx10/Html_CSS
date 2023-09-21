@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+
+<script>
+    let playersInfo=[["Sakib",95],["Ariful",99],["Rume",101],["Hasan",45],["Kamrul",55],["Bappi",35],["Sojol",10]];
+
+
+    function highestScorer(array_2D){
+
+        let player=array_2D[0][0];
+        let maxScore=array_2D[0][1];   
+
+        for(let i=1; i<array_2D.length; i++){                           
+            if(maxScore<array_2D[i][1]){
+                maxScore=array_2D[i][1];
+                player=array_2D[i][0];   
+            }                         
+        }
+        return player;
+    }
+
+    let playerName=highestScorer(playersInfo);
+    console.log(playerName);
+
+
+</script>
+</html>
