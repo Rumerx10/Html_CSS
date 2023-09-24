@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: rgb(35, 39, 47);
+}
+.container {
+  display: flex;
+  height: 2000px;
+}
+.leftSection {
+  width: 320px;
+  position: relative;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.leftHead {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgb(35, 39, 47);
+  height: 125px;
+  width: 280px;
+  z-index: 1000;
+}
+.leftHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.leftHeader span {
+  margin-right: 10px;
+}
+.reactIcon {
+  width: 35px;
+}
+.reactDocsTxt {
+  font-size: 20px;
+}
+.betaTxt {
+  font-size: 10px;
+  padding: 4px;
+  color: rgb(24, 158, 202);
+  background-color: rgb(40, 53, 65);
+  border: none;
+  border-radius: 5px;
+}
+.dlBtn {
+  margin-left: 63px;
+  font-size: 18px;
+}
+.searchBox {
+  position: relative;
+}
+.searchBox input {
+  width: 280px;
+  height: 40px;
+  background-color: rgb(49, 54, 65);
+  border: none;
+  border-radius: 7px;
+  padding-left: 40px;
+}
+.sckIcons {
+  position: relative;
+}
+.sckIcons i {
+  font-size: 12px;
+  position: absolute;
+  top: -26px;
+  left: 18px;
+}
+button {
+  position: absolute;
+  top: -31px;
+  background-color: rgb(35, 39, 47);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 6px 8px;
+}
+.btnC {
+  left: 222px;
+}
+.btnK {
+  left: 250px;
+}
+.learnReference {
+  width: 277px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  border-bottom: 1px solid rgb(24, 158, 202);
+  font-weight: bold;
+}
+
+.leftBody {
+  position: absolute;
+  top: 144px;
+  background-color: rgb(35, 39, 47);
+  padding: 20px;
+  width: 280px;
+}
+.sections {
+  border-bottom: 1px solid rgb(103, 109, 123);
+}
+.topicTitle {
+  color: rgb(103, 109, 123);
+  padding-top: 25px;
+}
+.topicName {
+  margin: 10px 0;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+/* Right Seciton ---------------------*/
+
+.rightSection {
+  background-color: rgb(35, 39, 47);
+  flex: 1;
+  padding: 36px 48px 20px 44px;
+}
+.rightContainer {
+}
+
+.rightHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.rightHeader {
+  display: flex;
+  align-items: center;
+  padding-bottom: 43px;
+}
+.reactBigIcon {
+  width: 122px;
+  height: 114px;
+}
+
+.reactDocsBigTxt {
+  font-size: 46px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.betaBigTxt {
+  margin: 10px 0 0 15px;
+  color: rgb(24, 158, 202);
+  background-color: rgb(40, 53, 65);
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.windows {
+  display: flex;
+  column-gap: 30px;
+}
+.window {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(52, 58, 70);
+  padding: 15px 36px 15px 36px;
+  height: 230px;
+}
+.windTxt {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.readMoreBtn {
+  display: inline-block;
+  background-color: rgb(16, 113, 145);
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.article span {
+  color: rgb(24, 158, 202);
+}
+.que {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 40px 0 36px 0;
+}
+
+.ansSta {
+  font-size: 20px;
+}
+.ulTxt li {
+  font-size: 20px;
+  line-height: 30px;
+}
+.ansEnd {
+  font-size: 20px;
+}
+
+.midPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(103, 109, 123);
+  border-bottom: 1px solid rgb(103, 109, 123);
+  margin-top: 60px;
+  padding: 40px 0;
+}
+.midP1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.midp2 {
+  border: none;
+  border-radius: 7px;
+  padding: 8px 22px;
+  background-color: rgb(16, 113, 145);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 70px;
+}
+.fCol1h {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.fCol1r1 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.fCol1r2 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.fColh {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.socialIcons {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.socialIcons i {
+  margin-right: 6px;
+}

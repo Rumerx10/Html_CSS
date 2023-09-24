@@ -1,0 +1,35 @@
+.seatContainer {
+  background-color: gray;
+  width: 300px;
+  height: 600px;
+  display: flex;
+}
+.seatIcon {
+  height: 60px;
+}
+.seat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.seatCheckBox {
+  transform: scale(1.5);
+  position: absolute;
+  top: 20px;
+  left: 22.4px;
+}
+.leftSeats {
+  background-color: rgb(167, 163, 163);
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 20px;
+}
+.rightSeats {
+  background-color: rgb(167, 163, 163);
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20px;
+}
